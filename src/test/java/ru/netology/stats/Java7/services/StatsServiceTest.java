@@ -11,8 +11,8 @@ public class StatsServiceTest {
 
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
-        int expected = 9;
-        int actual = service.minSales(sales);
+        long expected = 9;
+        long actual = service.minSales(sales);
 
         Assertions.assertEquals(expected, actual);
     }
@@ -23,8 +23,8 @@ public class StatsServiceTest {
 
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
-        int expected = 8;
-        int actual = services.maxSales(sales);
+        long expected = 8;
+        long actual = services.maxSales(sales);
 
         Assertions.assertEquals(expected, actual);
     }
@@ -35,8 +35,8 @@ public class StatsServiceTest {
 
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
-        int expected = 180;
-        int actual = service.sumSales(sales);
+        long expected = 180;
+        long actual = service.sumSales(sales);
 
         Assertions.assertEquals(expected, actual);
     }
@@ -47,8 +47,8 @@ public class StatsServiceTest {
 
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
-        int expected = 15;
-        int actual = service.averageSales(sales);
+        long expected = 15;
+        long actual = service.averageSales(sales);
 
         Assertions.assertEquals(expected, actual);
     }
@@ -59,8 +59,8 @@ public class StatsServiceTest {
 
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
-        int expected = 5;
-        int actual = service.moreAverageSales(sales);
+        long expected = 5;
+        long actual = service.moreAverageSales(sales);
 
         Assertions.assertEquals(expected, actual);
     }
@@ -71,8 +71,8 @@ public class StatsServiceTest {
 
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
-        int expected = 5;
-        int actual = service.lessAverageSales(sales);
+        long expected = 5;
+        long actual = service.lessAverageSales(sales);
 
         Assertions.assertEquals(expected, actual);
     }
